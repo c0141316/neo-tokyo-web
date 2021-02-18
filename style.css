@@ -1,0 +1,99 @@
+body {
+    background-image: url(res/bg.jpg);
+    background-size: 100% auto;
+}
+
+@font-face {
+    font-family: "Nicomedia";
+    src: url(res/font/Nicomedia-DO0pm.otf);
+}
+
+@font-face {
+    font-family: "Nicomedia Gradient";
+    src: url(res/font/NicomediaGradient-lgdjZ.otf);
+}
+@font-face {
+    font-family: "Nicomedia Halftone";
+    src: url(res/font/NicomediaHalftone-qZ38l.otf);
+}
+@font-face {
+    font-family: "Abril Fatface";
+    src: url(res/font/AbrilFatface-Regular.otf);
+}
+@font-face {
+    font-family: "Poppin";
+    src: url(res/font/Poppins-Regular.otf);
+}
+@font-face {
+    font-family: "Poppin Light";
+    src: url(res/font/Poppins-Light.otf);
+}
+
+header {
+    padding: 10px 10px;
+}
+
+.logo {
+    position: fixed;
+    bottom: 2vw;
+}
+
+.title {
+    font-family: "Abril Fatface", serif;
+    color: white;
+    font-size: 8vw;
+    line-height: 0.8;
+}
+
+.subtitle {
+    font-family: "Poppin Light", serif;
+    color:white;
+    font-size: 2vw;
+}
+
+nav {
+    width: 100%;
+}
+
+.homenav {
+    /* border */
+    border-width:2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4vh;
+    /* position */
+    box-sizing: border-box;
+    left: -0.5vw;
+    margin: 5% 48.5%;
+    width: 8vh;
+    height: 8vh;
+    /* icon */
+    background-color: none;
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+    line-height: 7vh;
+    font-family: "Anicons Regular", sans-serif;
+    /* animate */
+    font-variation-settings: "TIME" 1;
+    transition: font-variation-settings 0.4s ease, 
+                transform 0.4s ease,
+                background-color 0.4s ease,
+                color 0.4s ease,
+                border-color 0.4s ease;
+}
+
+.homenav:hover {
+    font-variation-settings: "TIME" 100;
+    transform: rotate(-90deg);
+    background-color: white;
+    color : black;
+    border-color: black;
+ }
+
+@media screen and (max-width: 513px){
+    body {
+        background-size: 513px auto;
+        background-position: center top;
+    }
+}

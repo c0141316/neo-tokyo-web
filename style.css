@@ -35,7 +35,7 @@ header {
 
 .logo {
     position: fixed;
-    bottom: 2vw;
+    bottom: 2vh;
 }
 
 .title {
@@ -53,6 +53,7 @@ header {
 
 nav {
     width: 100%;
+    position: relative;
 }
 
 .homenav {
@@ -65,8 +66,10 @@ nav {
     box-sizing: border-box;
     left: -0.5vw;
     margin: 5% 48.5%;
+    margin-top: 10vh;
     width: 8vh;
     height: 8vh;
+    position:absolute;
     /* icon */
     background-color: none;
     color: white;
@@ -90,6 +93,39 @@ nav {
     color : black;
     border-color: black;
  }
+
+ .dropdown {
+    /* border */
+   border-width:2px;
+   border-style: solid;
+   border-color: white;
+   border-radius: 4vh;
+   /* position */
+   box-sizing: border-box;
+   left: -0.5vw;
+   margin: 5% 48.5%;
+   margin-top: 10vh;
+   width: 8vh;
+   height: 8vh;
+   position:absolute;
+   z-index: -1;
+   opacity: 0;
+   background-color: white;
+ }
+
+/*
+ .gallery {
+     margin-top: 24vh;
+ }
+
+ .figure {
+     margin-top: 30vh;
+ }
+
+ .contact {
+     margin-top: 36vh;
+ }
+ */
 
 @media screen and (max-width: 513px){
     body {

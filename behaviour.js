@@ -44,6 +44,7 @@ function showNav(){
 	} else {
 		dropped = false;
 		dropUp();
+		clicked=false;
 	}
 }
 

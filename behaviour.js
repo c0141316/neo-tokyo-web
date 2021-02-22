@@ -39,12 +39,12 @@ if (!dropped) {
 
 function showNav(){
 	if (!dropped){
-		dropped = true;
 		dropDown();
-	} else {
+		dropped = true;
+		clicked=false;
+	} else {		
 		dropped = false;
 		dropUp();
-		clicked=false;
 	}
 }
 

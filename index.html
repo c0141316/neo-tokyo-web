@@ -12,7 +12,12 @@
             var clicked = false;
             var sejClicked = false;
             var galClicked = false;
+            var actClicked = false;
+            var conClicked = false;
             var curslid = 5;
+            var dayAct = true;
+            var nigAct = false;
+            var warAct = false;
         </script>
     </head>
     <body>
@@ -54,7 +59,7 @@
                                 動<rt>どう</rt>
                             </ruby>
                         </span>
-                        <span class="material-icons" style="line-height: 7vh;">
+                        <span class="material-icons" style="line-height: 7vh;" onclick="if(!actClicked) {artactPopUp(); actClicked = true;} else {artactPopDown(); actClicked = false;}">
                             domain
                         </span>
                         <span id="engmen"> Activity </span>
@@ -68,7 +73,7 @@
                                 絡<rt>らく</rt>
                             </ruby>
                         </span>
-                        <span class="material-icons" style="line-height: 7vh;">
+                        <span class="material-icons" style="line-height: 7vh;" onclick="if(!conClicked) {artconPopUp(); conClicked = true;} else {artconPopDown(); conClicked = false;}">
                         call
                         </span>
                         <span id="engmen"> Contact </span>
@@ -130,6 +135,81 @@
                     J
                 </div>
             </article>
+            <article id="artAct">
+                <div class="card" id="card1">
+                    <img src="res/gojira.jpg" class="cardImg" id="img1">
+                    <h3 id="th31">Godzilla Head</h3>
+                    <div id="cd1" class="cardDesc">
+                        The official local ambassador, the giant Godzilla is now a permanent feature and on occasion will light up and roar, which never ceases to be entertaining. He can be spotted from afar and makes a great meeting place (way cooler than Hachiko) as he sits right in the middle of Kabukicho.
+He is actually part of Gracery Hotel and you can book rooms with a view of his face, or take a tour up to the roof to see him close up!
+
+The Toho Cinema (same building as the hotel) is also a great place to see movies either dubbed or subtitled as they have a great selection—perfect for a rainy day.
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <img src="res/samuraimuseum.jpg" class="cardImg" id="img2">
+                    <h3 id="th32">Samurai Museum</h3>
+                    <div id="cd2" class="cardDesc">
+                        Pretty much the only family-friendly option for the area, the Samurai Museum has an impressive display of costumes, swords and all things samurai to enjoy, spanning 800 years of history. The museum is relatively small, but staff are knowledgeable and always willing to answer questions from visitors in English. They have demonstrations by trained actors and you can try on different costumes too. Guided tours are available and a good option, so you can have in-depth explanations to all the sections. Tickets are ¥1,800 for adults and ¥800 for children, so it’s a bit steep, but read more here and you may just find yourself convinced!
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <img src="res/hanazono.jpg" class="cardImg" id="img3">
+                    <h3 id="th33">Hanazono Shrine</h3>
+                    <div class="cardDesc"id="cd3">
+                        Built in the Edo period by the Hanazono family, this is one of the most historical Shinto shrines in Japan, but easy to miss. Find the tiny gap in tall buildings and step through the red torii gate to find a mini escape from the busy streets. Meaning “flower garden”, Hanazono was once part of the Imperial Gardens and later had a garden growing vegetables and flowers. The shrine has plenty of festivals including the popular Bird Festival held in November and the two-horse festival in February, as well as celebrating traditional ones like Setsubun and the New Year ceremonies. Once you’re done, if you fancy a drink, you can head down the path to the left of the complex and it leads you straight to Golden Gai.
+                    </div>
+                </div>
+                <div id="cardNav">
+                    <div class="NavAct material-icons" id="daybutton" onclick="if(!dayAct) {changeDay()}">
+                        brightness_5
+                    </div>
+                    <div class="NavAct material-icons" id="nightbutton" onclick="if(!nigAct) {changeNig()}">
+                        brightness_3
+                    </div>
+                    <div class="NavAct material-icons" id="caution" onclick="if(!warAct) {changeWar()}">
+                        warning
+                    </div>
+                </div>
+            </article>
+            <article id="artCon">
+                <div id="bg">
+                </div>
+                <div id="mycont">
+                    <div class="contitle">
+                    Enjoying our Content?
+                    </div>
+                    <div class="condesc">
+                        You can contact us by our mail or socmed. You can click about me submenu dropdown at right top of this page.
+                    </div>
+                    <div class="contitle">
+                        Want to know more about Kabukicho Nightlife?
+                    </div>
+                    <div class="condesc">
+                        Would be pleasure to help. Just contact us and we'll do our best to answer.
+                    </div>
+                    <div class="contitle">
+                        Further Reading
+                    </div>
+                    <div class="condesc">
+                        you can read more on <a href="https://en.wikipedia.org/wiki/Kabukich%C5%8D"> wikipedia </a> or on this article <a href="https://tokyocheapo.com/entertainment/things-to-do-in-kabukicho/">Tokyocheapo :  Things to do in Kabukicho </a>
+                    </div>
+                    <div class="condesc">
+                        <a href="https://web.archive.org/web/20100804074445/http://www.d-kabukicho.com/en/"> Kabukicho Renaissance official website
+                        </a> <br/>     
+                        <a href="http://www.kabukicho.or.jp/"> Kabukicho Portal Site (Japanese)
+                        </a>
+                    </div>             
+                </div>
+            </article>
+            <aside>
+                <div id="aboutme">
+                    About Me
+                </div>
+                <div id="artAboutMe">
+                    Julio Cancarito Mintarogo
+                </div>
+            </aside>
         </main>
         <script src="behaviour.js"></script>
     </body>

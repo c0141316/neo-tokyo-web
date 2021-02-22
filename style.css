@@ -49,12 +49,14 @@ header {
     font-size: 8vw;
     line-height: 0.8;
     transition: 0.5s;
+    text-shadow: 0px 0px 10px black;
 }
 
 .subtitle {
     font-family: "Poppin Light", serif;
     font-size: 2vw;
     transition: 0.5s;
+    text-shadow: 0px 0px 20px black;
 }
 
 nav {
@@ -456,23 +458,85 @@ aside {
     top: 0px;
     right: 0px;
     float: right;
+    z-index: 20;
 }
 #aboutme {
-    width: 10vw;
+    width: 20vh;
     right: 0px;
-    background-color: #680040;
+    background-color: initial;
     color: white;
     text-align: center;
-    padding: 1vw;
-    font-size: 1.5vw;
+    padding: 1vh;
+    font-size: 3vh;
     position: absolute;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px white solid;
+}
+#aboutme:hover {
+    opacity: 1;
+    background-color: white;
+    color: black;
 }
 #artAboutMe {
-    width: 10vw;
-    top: 10vh;
-    right: 0px;
+    display: flex;
+    font-size: 3vh;
+    flex-direction: column;
+    align-content: center;
+    object-position: center;
+    text-align: center;
+    width: 40vh;
+    top: 22vh;
+    right: 10vw;
     position: absolute;
     background-color: white;
+    padding: 2vh 2vw;
+    border-radius: 2vh;
+    box-shadow: 0px 0px 10px 0px white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#myimg {
+    padding-top: 2vh;
+    text-align: center;
+    object-position: center;
+    align-content: center;
+}
+#artAboutMe img {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    object-position: center;
+}
+#mytag {
+    font-size: 1.5vh;
+    color: plum;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.tag {
+    border: 2px plum solid;
+    border-radius:2vh;
+    padding:0.2vh 0.5vh;
+    margin:2px 0.3vh;
+}
+#mydesc {
+    font-size: 2vh;
+}
+#persCon {
+    margin-top: 2vh;
+	font-size: 2.5vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer {
+    position: fixed;
+    color: white;
+    bottom: 0px;
+    right: 5px;
+    font-size: 3vh;
+    text-shadow: 0px 0px 2px black;
 }
 
 @media screen and (max-width: 513px){

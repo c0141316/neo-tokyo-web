@@ -14,6 +14,7 @@
             var galClicked = false;
             var actClicked = false;
             var conClicked = false;
+            var abtClicked = false;
             var curslid = 5;
             var dayAct = true;
             var nigAct = false;
@@ -203,14 +204,32 @@ The Toho Cinema (same building as the hotel) is also a great place to see movies
                 </div>
             </article>
             <aside>
-                <div id="aboutme">
+                <div id="aboutme" onclick="if(!abtClicked) {abtPopUp(); abtClicked = true;} else {abtPopDown(); abtClicked = false;}">
                     About Me
                 </div>
                 <div id="artAboutMe">
-                    Julio Cancarito Mintarogo
+                    <div id="myimg">
+                        <img src="res/julio.jpg" alt="foto Julio">
+                    </div>
+                    <div id="myname">
+                        Julio Cancarito Mintarogo
+                    </div>
+                    <div id="mytag">
+                        <span class="tag"> Cloud Computing </span>
+                        <span class="tag"> Japanese Literature</span>]
+                    </div>
+                    <div id="mydesc">
+                        Hello my name is Julio. Iam in my 3rd year as Japanese Literature Student at Udayana University. Which right now iam got opportunity to be in bangkit program on cloud computing learning path. <ruby>宜<rt>よろ</rt></ruby>しくお<ruby>願<rt>ねが</rt></ruby>いします
+                    </div>
+                    <div id="persCon">
+                        changmi24@gmail.com <Br/> c0141316@bangkit.academy <br/> 081338733239
+                    </div>
                 </div>
             </aside>
         </main>
+        <footer>
+            Created by Julio 2021
+        </footer>
         <script src="behaviour.js"></script>
     </body>
 </html>

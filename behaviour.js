@@ -307,3 +307,12 @@ function artconPopDown() {
 	fig.style.opacity = "1";
 	home.style.visibility = "visible";
 }
+function abtPopUp() {
+    document.getElementById("artAboutMe").style.visibility = "visible";
+    document.getElementById("artAboutMe").style.opacity = "1";
+}
+
+function abtPopDown() {
+    document.getElementById("artAboutMe").style.visibility = "hidden";
+    document.getElementById("artAboutMe").style.opacity = "0";
+}

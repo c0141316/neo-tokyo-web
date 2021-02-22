@@ -11,6 +11,8 @@
         <script>
             var clicked = false;
             var sejClicked = false;
+            var galClicked = false;
+            var curslid = 5;
         </script>
     </head>
     <body>
@@ -38,7 +40,7 @@
                         <span id="japmen"> 
                             ギャラリー
                         </span>
-                        <span class="material-icons" style="line-height: 7vh;">
+                        <span class="material-icons" style="line-height: 7vh;" onclick="if(!galClicked) {galPopUp(); galClicked = true;} else {galPopDown(); galClicked = false;}">
                         collections
                         </span>
                         <span id="engmen"> Gallery </span>
@@ -119,12 +121,12 @@
                 <br>
             </article>
             <article id="artGal">
-                <div id="prevPhoto">
+                <div id="prevPhoto" onclick="curslid--; refrSlid();">
                     J
                 </div>
                 <section id="imgSlider">
                 </section>
-                <div id="nextPhoto">
+                <div id="nextPhoto" onclick="curslid++; refrSlid();">
                     J
                 </div>
             </article>

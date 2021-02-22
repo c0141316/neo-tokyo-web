@@ -285,9 +285,20 @@ nav {
     top: 10vh;
     left:10%;
     right:10%;
+    background-color:black;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    transition: 0.5s;
     width: 80%;
-    height: 80vh;
-    background-color: red;
+    height: 1vh;
+    visibility: hidden;
+    opacity: 0;
+}
+@keyframes bounce {
+    0% {font-size: 7.5vw;}
+    50% {font-size: 8vw;}
+    100% {font-size: 7.5vw;}
 }
 #prevPhoto {
     font-family: "Anicons Regular", sans-serif;
@@ -303,6 +314,10 @@ nav {
 }
 #prevPhoto:hover {
     font-variation-settings: "TIME" 100;
+    font-size: 7.5vw;
+}
+#prevPhoto:active {
+    animation: bounce 0.3s;
 }
 #nextPhoto {
     font-family: "Anicons Regular", sans-serif;
@@ -317,6 +332,10 @@ nav {
 }
 #nextPhoto:hover {
     font-variation-settings: "TIME" 100;
+    font-size: 7.5vw;
+}
+#nextPhoto:active {
+    animation: bounce 0.3s;
 }
 #imgSlider {
 }
@@ -352,5 +371,10 @@ nav {
         padding-left: 4vw;
         padding-right: 4vw;
         padding-bottom: 2vh;
+    }
+    #artGal {
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: repeat-x;
     }
 }

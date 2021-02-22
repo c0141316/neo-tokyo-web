@@ -1,6 +1,8 @@
 body {
     background-image: url(res/bg.jpg);
     background-size: 100% auto;
+    font-family:  "Poppin", serif;
+    overflow: hidden;
 }
 
 @font-face {
@@ -36,19 +38,23 @@ header {
 .logo {
     position: fixed;
     bottom: 2vh;
+    top: auto;
+    color:white;
+    transition: 0.5s;
+    z-index: 10;
 }
 
 .title {
     font-family: "Abril Fatface", serif;
-    color: white;
     font-size: 8vw;
     line-height: 0.8;
+    transition: 0.5s;
 }
 
 .subtitle {
     font-family: "Poppin Light", serif;
-    color:white;
     font-size: 2vw;
+    transition: 0.5s;
 }
 
 nav {
@@ -64,7 +70,7 @@ nav {
     border-radius: 4vh;
     /* position */
     box-sizing: border-box;
-    left: -0.5vw;
+    left: -2vh;
     margin: 5% 48.5%;
     margin-top: 10vh;
     width: 8vh;
@@ -84,7 +90,9 @@ nav {
                 background-color 0.4s ease,
                 color 0.4s ease,
                 border-color 0.4s ease;
+                text-shadow 0.4s ease;
     cursor: pointer;
+    z-index: 10;
 }
 
 .homenav:hover {
@@ -93,6 +101,7 @@ nav {
     background-color: white;
     color : black;
     border-color: none;
+    text-shadow: 0px 0px 0px white;
  }
 
  .homenav:active {
@@ -109,12 +118,12 @@ nav {
    border-radius: 4vh;
    /* position */
    box-sizing: border-box;
-   left: -0.5vw;
+   left: -2vh;
    margin: 5% 48.5%;
    margin-top: 10vh;
    width: 8vh;
    height: 8vh;
-   z-index: -1;
+   z-index: 2;
    position: absolute;
    opacity: 0;
    background-color: none;
@@ -191,9 +200,157 @@ nav {
     right: 150%;
 }
 
+#artSejarah {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 3vh;
+    margin-top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#artSejarah h2 {
+    content: "History";
+    color:white;
+    font-family: "Abril Fatface", serif;
+    font-size:400% ;
+    padding-top: 4vh;
+    padding-left: 2vh;
+    padding-bottom: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-image: url(res/shinjukutheatre.jpg);
+    background-position: center;
+    background-size: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+#definition {
+    padding:4vh 2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+#artSejarah #titleDef {
+    font-size: 4vw;
+    flex-grow: 4;
+    font-family: "Poppin light", serif;
+    display: inline;
+    white-space: nowrap;
+    line-height: 0.6;
+    text-align: center;
+}
+#artSejarah #articleDef {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+#artSejarah #subtitleDef {
+    padding:0px;
+    font-size: 2vw;
+    text-align: justify;
+    font-family: "Poppin light", serif;
+    letter-spacing: 0.5vw;
+}
+
+#shinjukuImg {
+    height: 50vh;
+    float: right;
+    margin-left: 1vw;
+}
+#miranozaImg {
+    height: 50vh;
+    float: left;
+    margin-right: 1vw;
+}
+#sectSej {
+    margin-top: 10px;
+}
+#sectSej div {
+    padding-left: 2vw;
+}
+#sectSej #artAlt {
+    text-align: right;
+}
+#artGal {
+    position: fixed;
+    top: 10vh;
+    left:10%;
+    right:10%;
+    width: 80%;
+    height: 80vh;
+    background-color: red;
+}
+#prevPhoto {
+    font-family: "Anicons Regular", sans-serif;
+    font-variation-settings: "TIME" 1;
+    transform: rotate(180deg);
+    font-size: 8vw;
+    float: left;
+    margin-left: 10px;
+    margin-top:35vh;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+}
+#prevPhoto:hover {
+    font-variation-settings: "TIME" 100;
+}
+#nextPhoto {
+    font-family: "Anicons Regular", sans-serif;
+    font-variation-settings: "TIME" 1;
+    font-size: 8vw;
+    float: right;
+    margin-right: 10px;
+    margin-top:35vh;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+}
+#nextPhoto:hover {
+    font-variation-settings: "TIME" 100;
+}
+#imgSlider {
+}
 @media screen and (max-width: 513px){
     body {
         background-size: 513px auto;
         background-position: center top;
+    }
+}
+@media screen and (max-width: 650px){
+    #definition {
+        flex-wrap: wrap;
+    }
+    #artSejarah #titleDef {
+        font-size: 300% !important;
+    }
+    #artSejarah #subtitleDef {
+        font-size: 40% !important;
+        letter-spacing: 37.5%;
+    }
+    #articleDef {
+        text-align: center;
+    }
+    #sectSej img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2vh;
+    }
+    #sectSej, #artAlt{
+        text-align: center !important;
+    }
+    #sectSej div {
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 2vh;
     }
 }

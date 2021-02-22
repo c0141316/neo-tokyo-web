@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Neo Tokyo </title>
+        <title> Neo Kabukicho </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Julio Cancarito Mintarogo">
-        <meta name="description" content="Japanese's Cyberpunk Subgenre">
+        <meta name="description" content="Kabukicho nightlife experience">
         <link rel="stylesheet" href="style.css" />
         <link href="https://res.cloudinary.com/dr6lvwubh/raw/upload/v1581441981/Anicons/anicons-regular.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script>
             var clicked = false;
+            var sejClicked = false;
         </script>
     </head>
     <body>
@@ -26,7 +27,7 @@
                                 史<rt>し</rt>
                             </ruby>
                         </span>
-                        <span class="material-icons" style="line-height: 7vh;">
+                        <span class="material-icons" style="line-height: 7vh;" onclick="if(!sejClicked) {artSejPopUp(); sejClicked = true;} else {artSejPopDown(); sejClicked = false;}">
                             access_time
                         </span>
                         <span id="engmen"> History </span>
@@ -74,14 +75,60 @@
             </nav>
             <div class="logo">
                <div class="title">
-                 Neo <br> Tokyo
+                 Neo <br> Kabukicho
                 </div>
                 <div class="subtitle">
-                    Japanese Cyberpunk Subculture
+                    Kabukicho nightlife experience
                 </div>
             </div>
         </header>
-        
+        <main>
+            <article id="artSejarah">
+                
+            <h2>
+                History
+            </h2>
+                <div id="definition">
+                    <div id="titleDef">
+                        <ruby>
+                            歌 <rt>か</rt>
+                            舞 <rt>ぶ</rt>
+                            伎 <rt>き</rt>
+                            町 <rt>ちょう</rt>
+                        </ruby> <br/>
+                        <span id="subtitleDef">
+                            Kabukichō
+                        </span>
+                    </div>
+                    <div id="articleDef">
+                        is an entertainment and red-light district in Shinjuku, Tokyo, Japan. Kabuki-chō is the location of many host and hostess clubs, love hotels, shops, restaurants, and nightclubs, and is often called the "Sleepless Town" (眠らない街).
+                    </div>
+                </div>
+                <section id="sectSej">
+                    <img src="res/history_3.png" alt="shinjukutheatre" id="shinjukuImg"/>
+                    <div id="artAlt">
+                        Originally, the area was known as <b>Tsunohazu</b> (角筈) and was a swamp. After the Meiji Period, the area became a duck sanctuary. As the Yodobashi Purification Plant was built in 1893, the ponds were filled in. In 1920, a girls' school was built there, and the surroundings were developed into a residential area. Prior to World War II, the district was one of the areas open to foreign-born property owners (primarily from Taiwan and Korea), who mainly operated tsurekomi yado, predecessors to today's love hotels.
+                    </div>
+                    <br>
+                    <img src="res/miranoza.jpg" alt="shinjukutheatre" id="miranozaImg"/>
+                    <div>
+                        By 1999, the area had been named "Asia's largest adult entertainment district", and tabloids were regularly running candid photographs of drunken Kabukichō patrons fighting and being arrested. However, starting in 2003, joint citizen and police patrols began enforcing business licensing, and the 1948 Businesses Affecting Public Morals Regulation Act was more strictly enforced as well starting in April 2004, forcing adult-themed businesses to start removing customers at midnight in preparation to close by 1 AM. Kabukichō leaders attributed the change in enforcement to Tokyo Governor Shintaro Ishihara and the Tokyo bid for the 2016 Summer Olympics.
+                    </div>
+                </section>
+                <br>
+                <br>
+            </article>
+            <article id="artGal">
+                <div id="prevPhoto">
+                    J
+                </div>
+                <section id="imgSlider">
+                </section>
+                <div id="nextPhoto">
+                    J
+                </div>
+            </article>
+        </main>
         <script src="behaviour.js"></script>
     </body>
 </html>

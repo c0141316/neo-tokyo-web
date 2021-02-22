@@ -3,10 +3,13 @@ var id2 = null;
 var id3 = null;
 var id4 = null;
 var dropped = false;
+var home = document.querySelector(".homenav")
 var wit = document.getElementById("whatisthat");
 var gal = document.getElementById("gallery");
 var fig = document.getElementById("figure");
 var con = document.getElementById("contact");
+var sej = document.getElementById("artSejarah");
+
 
 function dropDown() {
 if(!dropped) {
@@ -41,4 +44,48 @@ function showNav(){
 		dropped = false;
 		dropUp();
 	}
+}
+
+function artSejPopUp(){
+	sej.style.visibility = "visible";
+	sej.style.marginTop = "0";
+	sej.style.opacity = "1";
+	wit.style.marginTop = "80vh"
+	wit.style.borderColor = "black";
+	wit.style.color = "black";
+	document.getElementById("japmen").style.color = "black";
+	document.getElementById("engmen").style.color = "black";
+	gal.style.visibility = "hidden";
+	fig.style.visibility = "hidden";
+	con.style.visibility = "hidden";
+	gal.style.opacity = "0";
+	fig.style.opacity = "0";
+	con.style.opacity = "0";
+	home.style.visibility = "hidden";
+	document.querySelector(".logo").style.bottom = "auto";
+	document.querySelector(".logo").style.top = "2vh";
+	document.querySelector(".title").style.fontSize = "200%"
+	document.querySelector(".subtitle").style.fontSize = "50%"
+}
+
+function artSejPopDown(){
+	sej.style.visibility = "hidden";
+	sej.style.marginTop = "0";
+	sej.style.opacity = "0";
+	wit.style.marginTop = "18vh"
+	wit.style.borderColor = "white";
+	wit.style.color = "white";
+	document.getElementById("japmen").style.color = "white";
+	document.getElementById("engmen").style.color = "white";
+	gal.style.visibility = "visible";
+	fig.style.visibility = "visible";
+	con.style.visibility = "visible";
+	gal.style.opacity = "1";
+	fig.style.opacity = "1";
+	con.style.opacity = "1";
+	home.style.visibility = "visible";
+	document.querySelector(".logo").style.bottom = "2vh";
+	document.querySelector(".logo").style.top = "auto";
+	document.querySelector(".title").style.fontSize = "8vw"
+	document.querySelector(".subtitle").style.fontSize = "2vw"
 }

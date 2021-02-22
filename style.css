@@ -84,6 +84,7 @@ nav {
                 background-color 0.4s ease,
                 color 0.4s ease,
                 border-color 0.4s ease;
+    cursor: pointer;
 }
 
 .homenav:hover {
@@ -91,7 +92,7 @@ nav {
     transform: rotate(-90deg);
     background-color: white;
     color : black;
-    border-color: black;
+    border-color: none;
  }
 
  .dropdown {
@@ -110,9 +111,21 @@ nav {
    position:absolute;
    z-index: -1;
    opacity: 0;
-   background-color: white;
+   background-color: none;
  }
 
+ #whatisthat, #gallery, #figure, #contact {
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+    line-height: 7vh;
+    transition: 0.5s;
+ }
+
+ #whatisthat:hover{
+     color:black;
+     background-color: white;
+ }
 /*
  .gallery {
      margin-top: 24vh;

@@ -2,7 +2,11 @@ var id1 = null;
 var id2 = null;
 var id3 = null;
 var id4 = null;
+var dropped = false;
+var droppered = false;
+
 function dropDown() {
+if(!dropped) {
 	let wit = document.getElementById("whatisthat");
 	let gal = document.getElementById("gallery");
 	let fig = document.getElementById("figure");
@@ -62,7 +66,9 @@ function dropDown() {
 		}
 	}
 }
+}
 function dropUp() {
+if (!dropped && !droppered) {
 	let wit = document.getElementById("whatisthat");
 	let gal = document.getElementById("gallery");
 	let fig = document.getElementById("figure");
@@ -120,5 +126,16 @@ function dropUp() {
 			fig.style.opacity = opcty/8;
 			con.style.opacity = opcty/8;
 		}
+	}
+}
+}
+
+function showNav(){
+	if (!dropped){
+		dropped = true;
+		dropDown();
+	} else {
+		dropped = false;
+		dropUp();
 	}
 }

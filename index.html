@@ -7,24 +7,28 @@
         <meta name="description" content="Japanese's Cyberpunk Subgenre">
         <link rel="stylesheet" href="style.css" />
         <link href="https://res.cloudinary.com/dr6lvwubh/raw/upload/v1581441981/Anicons/anicons-regular.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script>
+            var clicked = false;
+        </script>
     </head>
     <body>
         <header>
             <nav>
-                <div class="homenav" onmouseover="dropDown()" onmouseout="dropUp()">
+                <div class="homenav" onmouseover="dropDown(); clicked = false;" onmouseout="if(!clicked){dropUp()}" onclick="showNav(); clicked=true;">
                     B
                 </div>
-                <div class="dropdown" id="whatisthat">
-                    ?
+                <div class="dropdown material-icons" id="whatisthat">
+                    access_time
                 </div>
-                <div class="dropdown" id="gallery">
-                    ?
+                <div class="dropdown material-icons" id="gallery">
+                    collections
                 </div>
-                <div class="dropdown" id="figure">
-                    ?
+                <div class="dropdown material-icons" id="figure">
+                    domain
                 </div>
-                <div class="dropdown" id="contact">
-                    ?
+                <div class="dropdown material-icons" id="contact">
+                    call
                 </div>
             </nav>
             <div class="logo">

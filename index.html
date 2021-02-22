@@ -18,17 +18,58 @@
                 <div class="homenav" onmouseover="dropDown(); clicked = false;" onmouseout="if(!clicked){dropUp()}" onclick="showNav(); clicked=true;">
                     B
                 </div>
-                <div class="dropdown material-icons" id="whatisthat">
-                    access_time
+                <div class="dropdowncontainer">
+                    <div class="dropdown" id="whatisthat">
+                        <span id="japmen"> 
+                            <ruby>
+                                歴<rt>れき</rt>
+                                史<rt>し</rt>
+                            </ruby>
+                        </span>
+                        <span class="material-icons" style="line-height: 7vh;">
+                            access_time
+                        </span>
+                        <span id="engmen"> History </span>
+                    </div>
                 </div>
-                <div class="dropdown material-icons" id="gallery">
-                    collections
+                <div class="dropdowncontainer">
+                    <div class="dropdown" id="gallery">
+                        <span id="japmen"> 
+                            ギャラリー
+                        </span>
+                        <span class="material-icons" style="line-height: 7vh;">
+                        collections
+                        </span>
+                        <span id="engmen"> Gallery </span>
+                    </div>
                 </div>
-                <div class="dropdown material-icons" id="figure">
-                    domain
+                <div class="dropdowncontainer">
+                    <div class="dropdown material-icons" id="figure">
+                        <span id="japmen"> 
+                            <ruby>
+                                活<rt>かつ</rt>
+                                動<rt>どう</rt>
+                            </ruby>
+                        </span>
+                        <span class="material-icons" style="line-height: 7vh;">
+                            domain
+                        </span>
+                        <span id="engmen"> Activity </span>
+                    </div>
                 </div>
-                <div class="dropdown material-icons" id="contact">
-                    call
+                <div class="dropdowncontainer">
+                    <div class="dropdown material-icons" id="contact">
+                        <span id="japmen"> 
+                            <ruby>
+                                連<rt>れん</rt>
+                                絡<rt>らく</rt>
+                            </ruby>
+                        </span>
+                        <span class="material-icons" style="line-height: 7vh;">
+                        call
+                        </span>
+                        <span id="engmen"> Contact </span>
+                    </div>
                 </div>
             </nav>
             <div class="logo">
@@ -40,6 +81,7 @@
                 </div>
             </div>
         </header>
+        
         <script src="behaviour.js"></script>
     </body>
 </html>
